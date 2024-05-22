@@ -6,7 +6,7 @@ export default styles = StyleSheet.create({
   container: {
     width: windowWidth,
     height: windowHeight,
-    backgroundColor: '#cee',
+    backgroundColor: '#135D66',
     alignItems: 'center',
   },
 
@@ -14,8 +14,6 @@ export default styles = StyleSheet.create({
     marginTop: windowHeight * 0.05,
     width: windowWidth * 0.9,
     height: windowHeight * 0.7,
-    borderWidth: 2,
-    borderColor: 'tomato',
     borderRadius: windowWidth * 0.05,
     alignItems: 'center',
   },
@@ -27,7 +25,7 @@ export default styles = StyleSheet.create({
   taskTitleText: {
     fontSize: windowWidth * 0.045,
     fontWeight: '700',
-    color: 'black',
+    color: '#E3fEF7',
     paddingVertical: windowHeight * 0.01,
   },
 
@@ -36,11 +34,12 @@ export default styles = StyleSheet.create({
     height: windowHeight * 0.075,
     borderWidth: 1,
     borderRadius: windowWidth * 0.03,
-    color: 'black',
+    color: '#E3fEF7',
     paddingHorizontal: windowWidth * 0.04,
     textAlignVertical: 'center',
     fontSize: windowWidth * 0.04,
     fontWeight: 'bold',
+    borderColor: '#E3fEF7',
   },
   taskDesc: {
     width: windowWidth * 0.8,
@@ -49,7 +48,7 @@ export default styles = StyleSheet.create({
   taskDescText: {
     fontSize: windowWidth * 0.045,
     fontWeight: '700',
-    color: 'black',
+    color: '#E3fEF7',
     paddingVertical: windowHeight * 0.01,
   },
 
@@ -58,10 +57,11 @@ export default styles = StyleSheet.create({
     height: windowHeight * 0.3,
     borderWidth: 1,
     borderRadius: windowWidth * 0.03,
-    color: 'black',
+    color: '#E3fEF7',
     paddingHorizontal: windowWidth * 0.04,
     fontSize: windowWidth * 0.04,
     fontWeight: 'bold',
+    borderColor: '#E3fEF7',
   },
 
   //----------------------------------------------,

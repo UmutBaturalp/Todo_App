@@ -6,7 +6,7 @@ export default styles = StyleSheet.create({
   container: {
     width: windowWidth,
     height: windowHeight,
-    backgroundColor: '#cee',
+    backgroundColor: '#135D66',
     alignItems: 'center',
   },
 
@@ -27,7 +27,7 @@ export default styles = StyleSheet.create({
   },
   taskTitleText: {
     fontSize: windowWidth * 0.045,
-    color: 'black',
+    color: '#E3fEF7',
     fontWeight: '600',
   },
 
@@ -35,7 +35,7 @@ export default styles = StyleSheet.create({
     position: 'absolute',
     bottom: windowHeight * 0.03,
     right: windowWidth * 0.05,
-    backgroundColor: 'tomato',
+    backgroundColor: '#003C43',
     width: windowWidth * 0.15,
     height: windowWidth * 0.15,
     alignItems: 'center',
@@ -43,14 +43,14 @@ export default styles = StyleSheet.create({
     borderRadius: windowWidth * 0.1,
   },
   addIcon: {
-    width: windowWidth * 0.1,
-    height: windowWidth * 0.1,
-    tintColor: '#cee',
+    width: windowWidth * 0.07,
+    height: windowWidth * 0.07,
+    tintColor: '#E3FEF7',
   },
   line: {
     width: windowWidth * 0.9,
     height: windowHeight * 0.001,
-    backgroundColor: 'black',
+    backgroundColor: '#E3FEF7',
     marginVertical: windowHeight * 0.01,
   },
 });

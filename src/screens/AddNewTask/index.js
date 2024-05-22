@@ -10,11 +10,25 @@ import React, {useState} from 'react';
 import styles from './styles';
 import {Header} from '../../components';
 const AddNewTask = props => {
-  const {navigation} = props;
+  const {navigation, route} = props;
+  const {data, setData} = route.params;
   const [newTaskTitle, setNewTaskTitle] = useState('');
   const [newTaskDesc, setNewTaskDesc] = useState('');
   console.log(newTaskTitle);
   console.log(newTaskDesc);
+  const addfunc = () => {
+    const newTask = {
+      id: Date.now(),
+      title: newTaskTitle,
+      description: newTaskDesc,
+      completed: false,
+    };
+    console.log('newtask func calıstı');
+    setData([...data, newTask]);
+    setNewTaskTitle('');
+    setNewTaskDesc('');
+    navigation.navigate('Home');
+  };
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -25,6 +39,7 @@ const AddNewTask = props => {
             <TextInput
               onChangeText={text => setNewTaskTitle(text)}
               placeholder="Enter Your Task Title"
+              placeholderTextColor={'#E3fEF7'}
               style={styles.taskTitleInput}
             />
           </View>
@@ -34,6 +49,7 @@ const AddNewTask = props => {
               onChangeText={text => setNewTaskDesc(text)}
               textAlignVertical="top"
               placeholder="Enter Your Task Description"
+              placeholderTextColor={'#E3fEF7'}
               style={styles.taskDescInput}
             />
           </View>
@@ -47,11 +63,7 @@ const AddNewTask = props => {
               <Text style={styles.buttonText}>Cancel</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => {
-                navigation.navigate('Home');
-                console.log('clicked add new task');
-                // BURAYA TODO EKLEME YAPILACAK
-              }}
+              onPress={addfunc}
               style={[styles.button, {backgroundColor: 'green'}]}>
               <Text style={styles.buttonText}>Add New Task</Text>
             </TouchableOpacity>

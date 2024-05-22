@@ -26,7 +26,7 @@ export default styles = StyleSheet.create({
   text: {
     fontSize: windowWidth * 0.045,
     fontWeight: '600',
-    color: 'black',
+    color: '#003C43',
   },
   button: {
     fontSize: windowWidth * 0.04,

@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   header: {
     width: windowWidth,
     height: windowHeight * 0.1,
-    backgroundColor: 'tomato',
+    backgroundColor: '#003C43',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: windowWidth * 0.05,
     fontWeight: '600',
-    color: 'black',
+    color: '#E3fEF7',
   },
   a: {
     width: windowWidth * 0.1,
@@ -55,5 +55,6 @@ const styles = StyleSheet.create({
   backIcon: {
     width: windowWidth * 0.06,
     height: windowWidth * 0.06,
+    tintColor: '#E3fEF7',
   },
 });
